@@ -48,7 +48,7 @@ function smallestDiff(arr1, arr2) {
         }
       }
     }  
-    return Math.min(...diffs)
+    return Math.min(...diffs) //can't do math.min on an array, ... spread operator takes all those values out of the array so you can find the min num
   }
 
 console.log(smallestDiff([10,20,14,16,18], [30, 23, 54, 33, 96]))
